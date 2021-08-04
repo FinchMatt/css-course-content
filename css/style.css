@@ -1,144 +1,235 @@
 body {
-	background: linear-gradient(to bottom, rgb(204, 229, 255), rgba(204, 229, 255, 0.4));
-	font-size: 1.15em;
-	text-align: justify;
-	font-family: "Lato", sans-serif;
-}
+    background: linear-gradient(to bottom, rgb(146, 182, 221), rgba(146, 182, 221, .15));
+    font-size: 1.25em;
+    font-family: "Lato", sans-serif;
+    
 
-input, textarea {
-	display: block;
-	margin: 10px;
+    /* text-transform: uppercase; 
+    text-align: justify; */
 }
 
 #title {
-	color: rgb(186, 133, 9);
-	font-family: "Sarabun", sans-serif;
+    color: olivedrab;
+    font-family: "Roboto", sans-serif;
 }
 
 .subtitle {
-	color: rgb(200, 148, 30);
-	font-family: "Sarabun", sans-serif;
+    color: rgb(127, 168, 44);
+    font-family: "Roboto", sans-serif;
 }
 
-#service-image {
-	height: 400px;
-	width: 70vw;
-
-	background: radial-gradient(circle, red 20%, blue 40%, green 55%);
-	border: 10px solid rgb(28, 28, 79);
+h2:hover {
+    color: olivedrab;
 }
 
-.link {
-	text-decoration: underline;
+.para-text {
+    margin: 25px;
 }
 
-.italics {
-	font-style: italic;
+#bulleted-list {
+    margin-bottom: 5vh;
 }
 
 #about-us-image {
-	height: 300px;
-	width: 60%;
+    width: 55vw;
 
-	border: 6px solid rgb(28, 28, 79);
-	margin: 80px 40px;
+    border: 6px solid rgb(28, 28, 79);
+    margin: 20px 40px;
 
-	float: right;
+    float: right;
+}
+
+#contact-us-image {
+    float: right;
+    margin: 5vh 10vw;
+    border: 6px solid rgb(28, 28, 79);
 }
 
 .site-table {
-	display: inline-block;
+    display: inline-block;
+}
+
+#service-image {
+    height: 11vh;
+    width: 66vw;
+
+    background: radial-gradient(circle, white 1%, red 5%,blue 15%,cyan 45%);
+    border: 10px solid rgb(28, 28, 79);
+    margin: 25px;
+
+    /*background: url("../img/Superstitions.JPG");*/
+    /*background: linear-gradient(215deg, rgba(204,229,255, 0), rgba(23, 99, 180, 1), rgba(204,229,255, 0));*/
+    /*background-size: contain;*/
 }
 
 .container {
-	background-color: rgb(250,250,250);
-	margin: 10px;
-	height: 300px;
+    background-color: rgb(28, 28, 79);
+    margin: 10px;
+    height: 300px;
 
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-item {
-	background: rgb(36, 130, 39);
-  color: white;
-  font-size: 25px;
-  text-align: center;
+    background: rgb(36,130,39);
+    color: white;
+    font-size: 25px;
+    text-align: center;
 
-  width: 70px;
-  line-height: 50px;
-  margin: 10px; 
+    width: 70px;
+    line-height:50px;
+    margin: 10px;
 }
 
 .grid-container {
-	background-color: rgb(250,250,250);
-	margin: 10px;
-	height: 500px;
+    background-color: rgb(28, 28, 79);
+    margin: 10px;
+    height: 500px;
 
-	display: grid;
-	grid-template-columns: auto auto auto;
-	grid-template-rows: auto auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
 }
 
 .grid-item {
-  color: black;
-  font-size: 25px;
-  text-align: center;
+    color: black;
+    font-size: 25px;
+    text-align: center;
 
-  width: 70px;
-  line-height: 40px;
-  margin: 10px; 
+    width: 70px;
+    line-height: 40px;
+    margin: 10px;
+}
+
+textarea ~ button {
+    color: purple;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+.link:link {
+    color: blue; 
+}
+
+.link:visited {
+    color: red;
+}
+
+.italics {
+    font-style: italic;
+}
+
+.form-input {
+    padding: 5px;
+    margin: 5px;
 }
 
 .submit-button {
-	margin: 20px 10px;
-	padding: 10px 15px;
-	border: none;
-	text-decoration: none;
-	font-family: "Lato", sans-serif;
-	font-weight: 600;
-	font-size: 20px;
-	color: white;
-	background: rgb(89, 150, 255);
-	transform: matrix(1, 0.45, 0.45, 1, 100, 50);
-	-webkit-transition: background, padding 500ms ease;
-	-moz-transition: background, padding 500ms ease;
-	-o-transition: background, padding 500ms ease;
+    margin: 20px 10px;
+    padding: 10px 15px;
+    border: none;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    background: rgb(89, 150, 255);
+    transform: translate(20px, 10px);
+    /*-webkit-transform: translate(50px, 30px);
+    -moz-transform: translate(50px, 30px);
+    -o-transform: translate(50px, 30px);*/
+    transition: all 500ms ease-in-out;
+    /*-webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out; */
 }
 
 .submit-button:hover {
-	background: rgb(147, 187, 255);
-	padding: 20px 30px;
+    background: rgb(147,187,255);
+    padding: 20px 30px; 
 }
 
 #about-me {
-/*	animation-name: red-to-black;
-	animation-duration: 4s;
-	animation-timing-function: linear;
-	animation-iteration-count: 2;
-	animation-direction: alternate-reverse;*/
-
-	-webkit-animation: red-to-black 4s linear 0s 2 alternate-reverse;
-	-moz-animation: red-to-black 4s linear 0s 2 alternate-reverse;
-	-ms-animation: red-to-black 4s linear 0s 2 alternate-reverse;
-	-o-animation: red-to-black 4s linear 0s 2 alternate-reverse;
+    /*animation-name: red-to-black;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;*/
+    animation: red-to-black 4s linear 0s infinite alternate;
+    /* -webkit-animation: red-to-black 4s linear 0s infinite alternate;
+    -moz-animation: red-to-black 4s linear 0s infinite alternate;
+    -o-animation: red-to-black 4s linear 0s infinite alternate; */
 }
 
 @keyframes red-to-black {
-	0% {
-		background: red; 
-		transform: translate(0px, 0px);
-	}
-
-	50% {
-		background: yellow; 
-		transform: translate(10px, 10px);
-	}
-
-	100% {
-		background: black; 
-		transform: translate(20px, 20px);
-	}
+    0% {background: red; transform: translate(0px, 0px);}
+    50% {background: yellow; transform: translate(20px, 20px);}
+    100% {background: black; transform: translate(40px, 40px);}
 }
+
+/*
+
+img[src^="../img/"] {
+    border: 5px solid black;
+}
+
+li:only-child {
+    color:purple;
+}
+
+td:only-child {
+    color:purple;
+}
+
+h2 + a {
+    color: red;
+}
+
+ul > li {
+    color: blue;
+}
+
+ul li {
+    color: green;
+}
+
+h2[class~=article-subtitle] {
+    background: green;
+}
+
+#services {
+    color: green;
+}
+
+h2[class=subtitle] {
+    color: blue;
+}
+
+.title {
+    color: olivedrab;
+}
+
+#contact-us {
+    color:red;
+}
+
+li:first-child {
+    color: steelblue;
+}
+
+li:last-child {
+    color: salmon;
+}
+
+li:nth-child(2) {
+    color: orange;
+}
+
+*/
